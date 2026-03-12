@@ -1,0 +1,85 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  background-color: var(--top-bar-bg, #333333);
+  color: var(--top-bar-text, #ffffff);
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.top-bar-status {
+  font-weight: 500;
+}
+
+.top-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar-streak {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--flame-color, #FF5722);
+}
+
+.flame-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.streak-count {
+  font-weight: 600;
+}
+
+.top-bar-icon-btn,
+.top-bar-avatar {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar-icon-btn svg,
+.top-bar-avatar svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+}
+
+.top-bar-icon-btn:hover,
+.top-bar-avatar:hover {
+  opacity: 0.8;
+}
+
+.top-bar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  opacity: 0.9;
+}
+
+.theme-toggle:hover {
+  opacity: 1;
+}
+
+[data-theme='dark'] .top-bar {
+  --top-bar-bg: #1a1a1a;
+  --top-bar-text: #e0e0e0;
+}

@@ -1,0 +1,14 @@
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--page-bg, #FFFFFF);
+}
+
+.main-content {
+  flex: 1;
+}
+
+[data-theme='dark'] .main-layout {
+  --page-bg: #121212;
+}

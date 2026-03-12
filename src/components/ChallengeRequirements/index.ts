@@ -1,0 +1,1 @@
+export { ChallengeRequirements } from './ChallengeRequirements';

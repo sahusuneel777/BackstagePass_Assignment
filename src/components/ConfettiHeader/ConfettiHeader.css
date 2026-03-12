@@ -1,0 +1,89 @@
+.confetti-header {
+  position: relative;
+  padding: 14px 20px;
+  background-color: var(--confetti-bg, #C8E6C9);
+  overflow: hidden;
+}
+
+.confetti-pieces {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.confetti-1 {
+  top: 8px;
+  right: 60px;
+  background: #E91E63;
+  transform: rotate(45deg);
+}
+
+.confetti-2 {
+  top: 12px;
+  right: 90px;
+  background: #FF9800;
+  transform: rotate(-30deg);
+}
+
+.confetti-3 {
+  top: 6px;
+  right: 120px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.confetti-4 {
+  top: 10px;
+  right: 150px;
+  background: #9C27B0;
+  transform: rotate(60deg);
+}
+
+.confetti-5 {
+  top: 4px;
+  right: 180px;
+  background: #FFEB3B;
+}
+
+.confetti-6 {
+  top: 14px;
+  right: 200px;
+  background: #4CAF50;
+  border-radius: 50%;
+}
+
+.confetti-7 {
+  top: 8px;
+  right: 230px;
+  background: #F44336;
+  transform: rotate(-15deg);
+}
+
+.confetti-8 {
+  top: 2px;
+  right: 260px;
+  background: #00BCD4;
+}
+
+.confetti-title {
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--confetti-text, #1B5E20);
+}
+
+[data-theme='dark'] .confetti-header {
+  --confetti-bg: #2e4a2e;
+  --confetti-text: #81C784;
+}

@@ -1,0 +1,10 @@
+.subscriber-post-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.subscriber-post-content .feed-post-card {
+  box-shadow: none;
+  border-radius: 0;
+}

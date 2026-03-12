@@ -1,0 +1,40 @@
+.challenge-requirements {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.requirement-item:last-child {
+  margin-bottom: 0;
+}
+
+.requirement-number {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--req-number-bg, #2196F3);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.requirement-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-primary, #000000);
+}
+
+[data-theme='dark'] .requirement-number {
+  --req-number-bg: #1976D2;
+}

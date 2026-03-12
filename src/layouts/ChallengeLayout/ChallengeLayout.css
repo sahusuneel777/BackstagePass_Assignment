@@ -1,0 +1,32 @@
+.challenge-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 56px);
+}
+
+.challenge-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.challenge-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 32px 48px;
+  background-color: var(--content-bg, #FFFFFF);
+}
+
+[data-theme='dark'] .challenge-content {
+  --content-bg: #121212;
+}
+
+@media (max-width: 768px) {
+  .challenge-body {
+    flex-direction: column;
+  }
+
+  .challenge-content {
+    padding: 16px;
+  }
+}

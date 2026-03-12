@@ -1,0 +1,89 @@
+.see-others-section {
+  margin-top: 32px;
+}
+
+.section-header {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary, #000000);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.avatars-group {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.participant-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--card-bg, #FFFFFF);
+  margin-left: -8px;
+}
+.participants-number {
+  font-weight: 700;
+}
+
+.participant-avatar:first-child {
+  margin-left: 0;
+}
+
+.participants-count {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-secondary, #666666);
+}
+
+.pinned-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--text-secondary, #666666);
+}
+
+.pin-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-primary, #000000);
+}
+
+.challenge-post-card {
+  background: var(--card-bg, #FFFFFF);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.challenge-post-card .feed-post-card {
+  box-shadow: none;
+}
+
+.challenge-requirements-wrap {
+  padding: 0 20px 20px;
+  margin-top: 4px;
+}
+
+.challenge-requirements-wrap .post-content {
+  margin-bottom: 0;
+}
+
+[data-theme='dark'] .participant-avatar {
+  border-color: var(--card-bg);
+}
