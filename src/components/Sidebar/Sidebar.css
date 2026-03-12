@@ -1,28 +1,31 @@
 .sidebar {
   width: 220px;
   min-width: 220px;
-  background-color: var(--sidebar-bg, #F8F8F8);
-  padding: 24px 0;
-  border-right: 1px solid var(--sidebar-border, #E5E5E5);
+  background: #F4F4F6;
+  padding: 20px 12px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 10px;
 }
-
 .sidebar-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+
+  padding: 10px 14px;
+  border-radius: 20px;
+
   text-decoration: none;
-  color: var(--text-secondary, #666666);
-  font-size: 15px;
+  color: #7a7a7a;
+  font-size: 14px;
   font-weight: 500;
-  transition: background-color 0.2s, color 0.2s;
-  cursor: pointer;
+
+  transition: all 0.2s ease;
 }
 
 .sidebar-item:hover:not(.locked) {
@@ -30,8 +33,10 @@
 }
 
 .sidebar-item.active {
-  background-color: var(--sidebar-active-bg, #E0F7FA);
-  color: var(--text-primary, #000000);
+  background: white;
+  color: #111;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 .sidebar-item.locked {
@@ -48,9 +53,9 @@
 }
 
 .lock-icon {
-  width: 18px;
-  height: 18px;
-  color: var(--lock-icon-color, #666666);
+  width: 16px;
+  height: 16px;
+  color: #9e9e9e;
 }
 
 .completed-dot {

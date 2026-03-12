@@ -18,7 +18,7 @@ export function SeeOthersShared({
   participantAvatars,
 }: SeeOthersSharedProps) {
   return (
-    <section className="see-others-section">
+    <section className="challenge-post-card">
       <div className="section-header">
         <h2 className="section-title">
           See what others{' '}
@@ -36,28 +36,29 @@ export function SeeOthersShared({
           shared
         </h2>
         <p className="participants-count">
-  <span className="participants-number">{participantsCount}+</span> participants already completed
-</p>
+          <span className="participants-number">{participantsCount}+</span> participants already completed
+        </p>
       </div>
+      <div className="section-header2">
+        <div className="pinned-badge">
+          <svg
+            className="pin-icon"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden
+          >
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+          <span>This is a pinned post</span>
+        </div>
 
-      <div className="pinned-badge">
-        <svg
-          className="pin-icon"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          aria-hidden
-        >
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-        </svg>
-        <span>This is a pinned post</span>
-      </div>
-
-      <div className="challenge-post-card">
-        <FeedPostCard post={pinnedPost} showDropdown showActions={false}>
-          <div className="challenge-requirements-wrap">
-            <ChallengeRequirements requirements={requirements} />
-          </div>
-        </FeedPostCard>
+        <div>
+          <FeedPostCard post={pinnedPost} showDropdown showActions={false}>
+            <div className="challenge-requirements-wrap">
+              <ChallengeRequirements requirements={requirements} />
+            </div>
+          </FeedPostCard>
+        </div>
       </div>
     </section>
   );
