@@ -1,7 +1,8 @@
 .sidebar {
   width: 220px;
   min-width: 220px;
-  background: #F4F4F6;
+  /* background: #F4F4F6; */
+  background-color: var(--sidebar-bg, #F8F8F8);
   padding: 20px 12px;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
